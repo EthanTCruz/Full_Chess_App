@@ -1,0 +1,6 @@
+[submodule "Chess_Model"]
+	path = Chess_Model
+	url = https://github.com/EthanTCruz/chess_model
+[submodule "Sveltekit_Chess"]
+	path = Sveltekit_Chess
+	url = https://github.com/EthanTCruz/Sveltekit-Chess
