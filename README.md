@@ -16,6 +16,8 @@ npm run dev
 ```
 2. Open another terminal and run:
 ```bash
+docker run --name my-redis -p 6379:6379 -d redis
+
 pip install -r .\Chess_Model\requirements.txt
 python -m uvicorn Chess_Model.src.api.main:app --host 127.0.0.1 --port 8001
 ```
