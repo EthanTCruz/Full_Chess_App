@@ -43,3 +43,21 @@ $links = $page.Links.Href | Where-Object { $_ -like "*.rtbw" -or $_ -like "*.rtb
 foreach ($link in $links) {
     curl "https://tablebase.lichess.ovh/tables/standard/3-4-5/$link" -o "Path/to/Data/Directory/$link"
 }```
+
+
+For ubuntu:
+```
+base_url="https://tablebase.lichess.ovh/tables/standard/3-4-5/"
+target_directory="/home/ethancruz3141/git/chess_model/src/model/data/EndgameTbl"
+
+# Create the target directory if it doesn't exist
+mkdir -p "$target_directory"
+
+# Fetch the page and extract links
+links=$(curl -s "$base_url" | grep -oP 'href="\K[^"]*(?=")' | grep -E '\.(rtbw|rtbz)$')
+
+# Download each file
+for link in $links; do
+    curl -o "${target_directory}/${link##*/}" "${base_url}${link}"
+done
+```
