@@ -34,3 +34,12 @@ To use the multiplayer gameplay, login or click new user to sign in with a user 
 ## Single Player Gameplay
 To play against a computer, navigate to the url where the app is hosted (typically with Sveltekit it will be `http://localhost:5173/`) and login or click new user to get into the application. Next hit the `Play Computer` button to navigate to a page where you can play against my chess ai.
 
+## Run in order to use chess bot and single player:
+```# Get the list of file URLs
+$page = Invoke-WebRequest 'https://tablebase.lichess.ovh/tables/standard/3-4-5/'
+$links = $page.Links.Href | Where-Object { $_ -like "*.rtbw" -or $_ -like "*.rtbz" }
+
+# Download each file
+foreach ($link in $links) {
+    curl "https://tablebase.lichess.ovh/tables/standard/3-4-5/$link" -o "Path/to/Data/Directory/$link"
+}```
