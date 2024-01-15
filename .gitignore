@@ -20,3 +20,6 @@ vite.config.ts.timestamp-*
 **/.pytest_cache/**
 /sveltekit-chess-env/
 /chess-model-env/
+terraform/secret.json
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
