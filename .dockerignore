@@ -1,0 +1,13 @@
+
+chess-model-env/
+sveltekit-chess-env/
+terraform/
+.ipynb_checkpoints/
+.vscode/
+Chess_Model/.venv/
+**/__pycache__/
+Sveltekit_Chess/.venv
+**/.pytest_cache/
+Sveltekit_Chess/.vscode
+Chess_Model/src/model/chess_model
+Chess_Model/src/model/chess_modelmodel.h5
