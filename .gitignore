@@ -28,7 +28,10 @@ terraform/.terraform/providers/registry.terraform.io/hashicorp/google/4.51.0/win
 terraform/secret.tfvars
 **secret.json**
 terraform/.terraform/
-
+terraform/.terraform/providers/registry.terraform.io/hashicorp/google/4.51.0/windows_amd64/terraform-provider-google_v4.51.0_x5.exe
+terraform/.terraform.lock.hcl
+terraform/secret.tfvars
+terraform/variables.tfvars
 **secret.json**
 src/model/data/*
 src/model/data/**
