@@ -48,7 +48,7 @@ foreach ($link in $links) {
 For ubuntu:
 ```
 base_url="https://tablebase.lichess.ovh/tables/standard/3-4-5/"
-target_directory="/home/ethancruz3141/git/chess_model/src/model/data/EndgameTbl"
+target_directory="/home/ethancruz3141/Chess_Model/src/model/data/EndgameTbl"
 
 # Create the target directory if it doesn't exist
 mkdir -p "$target_directory"

@@ -26,3 +26,7 @@ variable "provisioning"{
 variable "service_account" {
   type = string
 }
+
+variable "machine_size" {
+  type = number
+}
