@@ -55,7 +55,7 @@ override.tf.json
 .terraformrc
 terraform.rc
 
-**.ipynb
+
 env/
 sveltekit-chess-env/
 chess-model-env/
